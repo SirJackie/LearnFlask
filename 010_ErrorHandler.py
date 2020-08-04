@@ -15,7 +15,7 @@ def error404(e):
     return "<h1>404 Not Found, Try to access other pages.</h1>", 404
 
 @app.errorhandler(500)
-def error404(e):
+def error500(e):
     return "<h1>There is an error inside server.</h1>", 500
 
 if __name__ == "__main__":
