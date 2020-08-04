@@ -21,5 +21,5 @@ def user(name):
 if __name__ == "__main__":
     app.run()
     # Or Use Following Statements inside Terminal:
-    # set FLASK_APP=001_HelloFlask.py
+    # set FLASK_APP=001_Route.py
     # flask run
