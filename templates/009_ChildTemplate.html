@@ -1,0 +1,21 @@
+{% extends "009_ParentTemplate.html" %}
+
+
+{% block title %}
+Template With Block
+{% endblock %}
+
+
+{% block head %}
+{{ super() }}
+<style>
+    h1{
+        color: blue;
+    }
+</style>
+{% endblock %}
+
+
+{% block body %}
+<h1>Hello World!</h1>
+{% endblock %}
