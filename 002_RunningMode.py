@@ -20,10 +20,10 @@ def error():
     return 5/0
 
 if __name__ == "__main__":
-    app.run(debug=True,
-            host="0.0.0.0",
-            port="80",
-            threaded=True)
+    app.run(debug=True,      # Enable Debug Mode (Reloader and Debugger)
+            host="0.0.0.0",  # Allow Non-localhost Devices to Access
+            port="80",       # Set Port to 80
+            threaded=True)   # Enable Multi Threaded
     # Or Use Following Statements inside Terminal:
     # set FLASK_APP=002_RunningMode.py
     # set FLASK_DEBUG=1
