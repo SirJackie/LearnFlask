@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template With Macro</title>
+</head>
+<body>
+
+</body>
+    {% macro render_comment(comment) %}
+        <li>{{ comment }}</li>
+    {% endmacro %}
+    <div>
+        {% for comment in comments %}
+            {{ render_comment(comment) }}
+        {% endfor %}
+    </div>
+</html>
