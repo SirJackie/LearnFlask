@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Complex Template Sample</title>
+</head>
+<body>
+
+</body>
+    <div>
+        <h1>Complex Variables</h1>
+        <p>list : {{ list }}</p>
+        <p>list[0] : {{ list[0] }}</p>
+        <p>list[{{ i }}] : {{ list[i] }}</p>
+        <p>dict : {{ dict }}</p>
+        <p>dict["key"] : {{ dict["key"] }}</p>
+        <p>object : {{ object }}</p>
+        <p>object.method() : {{ object.method() }}</p>
+    </div>
+    <div>
+        <h1>Variables with filter</h1>
+        <p>Sentence : {{ sentence }}</p>
+        <p>Sentence with capitalize : {{ sentence|capitalize }}</p>
+        <p>Sentence with lower : {{ sentence|lower }}</p>
+        <p>Sentence with upper : {{ sentence|upper }}</p>
+        <p>Sentence with title : {{ sentence|title }}</p>
+        <p>HTMLString : {{ HTMLString }}</p>
+        <p>HTMLString with trim : {{ HTMLString|trim }}</p>
+        <p>HTMLString with safe : {{ HTMLString|safe }}</p>
+        <p>HTMLString with striptags : {{ HTMLString|striptags }}</p>
+    </div>
+
+</html>
